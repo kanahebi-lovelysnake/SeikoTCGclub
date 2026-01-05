@@ -4,7 +4,7 @@ import {
   onSnapshot
 } from
   "https://www.gstatic.com/firebasejs/12.7.0/firebase-firestore.js";
-window.onload = LoadFinish
+window.onload = LoadFinish;
 function LoadFinish()
 {
     onSnapshot(doc(db,"status","main"),snap=>{
