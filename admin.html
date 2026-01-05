@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./admin.js"></script>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div id = "email_block"><span>メール</span>
+    <input type="text" id="email"></div>
+    <span id="password_block"><span>パスワード</span>
+    <input type="text" id="password">
+    <button id="loginbutton">ログイン</button></span>
+    <span id="login_notifyer"></span><br>
+    <input type="number" id="input">
+    <button id="addbutton">追加</button>
+    <button id="callbutton">呼び出し</button>
+    <button id="deletebutton">削除</button>
+    <div class="container">
+        <div class="left">
+            <p>呼び出し中</p>
+            <div class="container" id="leftcontainer"></div>
+        </div>
+        <div class="right">
+            <p>待機中</p>
+            <div class="container" id="rightcontainer"></div>
+        </div>
+    </div>
+    <input type="text" id="messagebox"><button id="messagebutton">送信</button><br>
+    <p>お知らせ</p>
+    <div id="message"></div>
+</body>
+</html>
