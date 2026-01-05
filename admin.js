@@ -116,7 +116,7 @@ async function DeleteNumber()
 }
 async function SendMessage() 
 {
-  const date = new Date()
+  const date = new Date();
   const message = String(date.getHours())+":"+String(date.getMinutes())+" "+document.getElementById("messagebox").value;
   let messagearray = (await getDoc(docref)).data().message;
   messagearray.unshift(message);
