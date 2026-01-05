@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+}
+.left{
+    background-color: aquamarine;
+    width: 50%;
+}
+.right{
+    background-color: pink;
+    width: 50%;
+}
+.number{
+    background-color: white;
+    margin: 3px 2px;
+    text-align: center;
+    width: 10%;
+    border-radius: 5px;
+}
+.messagetext{
+    word-break: break-all;
+}
+#callbutton{
+    background-color: aquamarine;
+}
+#deletebutton{
+    background-color: red;
+    color: white;
+}
+#input{
+    width: 20%;
+}
+#message{
+    background-color: #FFF0D6;
+    padding: 2px;
+}
