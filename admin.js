@@ -96,28 +96,6 @@ async function Call()
   }
   calledarray.push(number);
   updateDoc(docref,{pending: pendingarray, called: calledarray});
-  if (pendingarray.length >= 1){
-    fetch("https://onesignal.com/api/v1/notifications", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Authorization": "Basic os_v2_app_24csyxxrjjbf3ib5rchs6mw6dyrxqn3mlicejp4cbxwyrikx3vokm7qojra5bczc6u54psjeu53lpzj2x7evflmr4z36hbzpe4aonjy"
-    },
-    body: JSON.stringify({
-      app_id: "d7052c5e-f14a-425d-a03d-888f2f32de1e",
-      filters: [
-        {
-          field: "tag",
-          key: "number",
-          relation: "=",
-          value: number
-        }
-      ],
-      headings: { ja: "聖光カードゲーム同好会" },
-      contents: { ja: `もうすぐ呼び出されます。カードゲーム同好会にお越しください。` }
-    })
-  });
-  }
 }
 async function DeleteNumber() 
 {
