@@ -16,7 +16,7 @@ let input
 function LoadFinish()
 {
   input = document.getElementById("input")
-  input.addEventListener("change",InputChanged)
+  input.addEventListener("input",InputChanged)
   onSnapshot(doc(db,"status","main"),snap=>{
     const data = snap.data();
       let elems = [];
@@ -54,7 +54,11 @@ function InputChanged()
     if (permission === "granted")
     {
       OneSignal.push(() => {
-        OneSignal.sendTag("number", input.value);
+        OneSignal.registerForPushNotifications().then(() => {
+          OneSignal.sendTag("number", input.value);
+          OneSignal.getUserId(userid => {
+            console.log(userid)
+          })})
       })
     }
   })
