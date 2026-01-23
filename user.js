@@ -5,8 +5,8 @@ import {
 } from
   "https://www.gstatic.com/firebasejs/12.7.0/firebase-firestore.js";
 window.onload = LoadFinish
-window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
+window.OneSignal = window.OneSignal || [];
+  OneSignal.push(async function() {
     await OneSignal.init({
       appId: "d7052c5e-f14a-425d-a03d-888f2f32de1e",
       notifyButton: { enable: true },
