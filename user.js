@@ -10,6 +10,7 @@ window.OneSignal = window.OneSignal || [];
     await OneSignal.init({
       appId: "d7052c5e-f14a-425d-a03d-888f2f32de1e",
       notifyButton: { enable: true },
+      notificationIcon: "https://kanahebi-lovelysnake.github.io/icon.png"
     });
   });
 let input
